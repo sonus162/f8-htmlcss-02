@@ -7,7 +7,7 @@ html {
 }
 body {
     font-size: 1.6rem;
-    font-family: "Poppins", "Sen", sans-serif;
+    font-family: "Montserrat", "Sen", sans-serif;
 }
 :root {
     --main-bg-color: #fffcf4;
@@ -26,7 +26,7 @@ body {
     border-radius: 26px;
     color: #fff;
     text-decoration: none;
-    font-family: Poppins;
+    font-family: Montserrat;
     font-size: 16px;
     font-weight: 600;
     text-align: center;
@@ -71,7 +71,7 @@ body {
     padding: 0 21px;
     color: #5f5b53;
     text-align: center;
-    font-family: Poppins;
+    font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
@@ -97,6 +97,10 @@ body {
     min-width: 144px;
     background: #171100;
     border-radius: 24.5px;
+    transition: ease 0.5s;
+}
+.btn-sign-up:hover {
+    background-color: #ffb900;
 }
 .hero {
     background: var(--main-bg-color);
@@ -208,7 +212,7 @@ body {
 .courses .info .desc {
     margin-top: 26px;
     color: #5f5b53;
-    font-family: Poppins;
+    font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.67; /* 166.667% */
@@ -440,6 +444,10 @@ body {
     width: calc(33.33% - 20px);
     background: #ffffff;
     border-radius: 16px;
+    transition: ease 0.5s;
+}
+.blog .item a {
+    text-decoration: none;
 }
 .blog .thumb {
     width: 100%;
@@ -577,8 +585,8 @@ body {
 .footer .copy-right {
     padding: 28px 0;
     text-align: center;
-    margin:  0 auto;
-    color: #807D74;
+    margin: 0 auto;
+    color: #807d74;
     font-size: 14px;
     font-weight: 400;
 }
