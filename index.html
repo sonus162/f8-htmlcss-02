@@ -20,10 +20,16 @@
         <div class="content">
             <div class="body">
                 <a href="index.html"><img src="./assets/img/logo.svg" alt="Lesson" class="logo"></a>
+                <div class="icon-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                        style="fill: rgba(0, 0, 0, 1);">
+                        <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                    </svg>
+                </div>
                 <ul class="nav">
                     <li class="active"><a href="index.html">Trang chủ</a></li>
                     <li><a href="list-blog.html">Blog</a></li>
-                    <li><a href="#!">Dịch vụ</a></li>
+                    <li><a href="list-services.html">Dịch vụ</a></li>
                 </ul>
                 <div class="action">
                     <a href="#!" class="btn btn-sign-up">Liên hệ</a>
@@ -76,13 +82,12 @@
                             my year” feeling with courses, certificates,
                             and degrees from world-class universities and companies.</p>
                         <div class="cta">
-                            <a href="#" class="btn">See Courses</a>
-                            <div class="btn-watching">
+                            <a href="#" class="btn">See Services</a>
+                            <!-- <div class="btn-watching">
                                 <div href="" class="img-watching"><img src="./assets/img/watching.png" alt=""></div>
                                 <p class="watching">Watch Video</p>
-                            </div>
+                            </div> -->
                         </div>
-                        <p class="desc">Recent engagement</p>
                         <div class="desc-stats"></div>
                     </div>
                 </div>
@@ -362,6 +367,14 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        var icon_menu = document.querySelector('.icon-menu');
+        var menu = document.querySelector('.nav');
+
+        icon_menu.addEventListener('click', function () {
+            menu.classList.toggle('show');
+        });
     </script>
 </body>
 
